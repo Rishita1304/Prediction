@@ -1,6 +1,18 @@
+import { View} from "react-native";
+
 import { StyleSheet } from "react-native";
 
-import { COLORS, FONT, SHADOWS, SIZES } from "../../../constants/index";
+import { COLORS, FONT, SHADOWS, SIZES } from "../../../constants/index";import MyLineChart from '../../utils/Charts'
+
+const ChartCard = () => {
+  return (
+    <View
+      style={styles.container}
+    >
+        <MyLineChart/>
+    </View>
+  )
+}
 
 const styles = StyleSheet.create({
   container: ({
@@ -17,7 +29,6 @@ const styles = StyleSheet.create({
   logoContainer: ({
     width: 70,
     height: 70,
-    // backgroundColor:  COLORS.white,
     borderRadius: SIZES.medium,
     justifyContent: "center",
     alignItems: "center",
@@ -69,4 +80,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default styles;
+export default ChartCard

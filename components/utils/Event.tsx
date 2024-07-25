@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import Dotted from './Dotted.jsx'
+import Dotted from './Dotted'
 
 const EventDetails = () => {
   return (
